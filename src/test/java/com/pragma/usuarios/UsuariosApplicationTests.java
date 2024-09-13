@@ -8,6 +8,7 @@ class UsuariosApplicationTests {
 
 	@Test
 	void contextLoads() {
+		System.out.println("context load for tests");
 	}
 
 }

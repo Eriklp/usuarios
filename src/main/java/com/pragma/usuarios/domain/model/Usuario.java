@@ -53,6 +53,8 @@ public class Usuario {
     @Email
     private String correo;
 
+    @Getter
+    @Setter
     @NotBlank
     private String clave;
 
@@ -61,11 +63,5 @@ public class Usuario {
     @Enumerated(EnumType.STRING)
     private Role rol;
 
-    // Getters and Setters
-
-    public void setClave(String clave) {
-        BCryptPasswordEncoder encoder = new BCryptPasswordEncoder();
-        this.clave = encoder.encode(clave);
-    }
 }
 
