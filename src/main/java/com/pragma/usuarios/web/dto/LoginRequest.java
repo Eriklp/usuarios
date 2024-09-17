@@ -4,27 +4,26 @@ import jakarta.validation.constraints.NotBlank;
 
 public class LoginRequest {
 
-    @NotBlank(message = "El nombre de usuario es obligatorio")
-    private String username;
+    @NotBlank(message = "El correo es obligatorio")
+    private String correo;  // Cambiado a 'correo'
 
     @NotBlank(message = "La contraseña es obligatoria")
-    private String password;
+    private String clave;  // Cambiado a 'clave'
 
     // Getters y Setters
-
-    public String getUsername() {
-        return username;
+    public String getCorreo() {
+        return correo;
     }
 
-    public void setUsername(String username) {
-        this.username = username;
+    public void setCorreo(String correo) {
+        this.correo = correo;
     }
 
-    public String getPassword() {
-        return password;
+    public String getClave() {
+        return clave;
     }
 
-    public void setPassword(String password) {
-        this.password = password;
+    public void setClave(String clave) {
+        this.clave = clave;
     }
 }
